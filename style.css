@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h3 {
+    margin-bottom: 10px;
+}
+#totalPoints {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-section {
+    margin-bottom: 30px;
+}
+input, button {
+    padding: 8px;
+    margin: 5px 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 3px;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.btn-delete {
+    background-color: #dc3545;
+}
+.btn-delete:hover {
+    background-color: #a71d2a;
+}
+.points {
+        width: 300px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+/* New styling for the log clear button */
+#clearLogs {
+    margin-bottom: 10px;
+    background-color: #ffc107;
+    color: #000;
+}
+#clearLogs:hover {
+    background-color: #e0a800;
+}
+.items-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+}
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .points {
+        width: 100%;
+    }
+    .items-section {
+        width: 100%;
+    }
+}

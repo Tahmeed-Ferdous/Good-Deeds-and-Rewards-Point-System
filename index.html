@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Points Manager</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Override external CSS for the title */
+    .page-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+  flex-basis: 100%;
+}
+  </style>
+</head>
+<body>
+  <h1 class="page-title">Points Manager</h1>
+  <div class="points">
+    <div id="totalPoints">Total Points: 0</div>
+    
+    <!-- Log Section -->
+    <div id="log">
+      <h3>Log: <button id="clearLogs" class="btn"><i class="fas fa-trash-alt"></i> Clear</button></h3>
+      <ul id="logList"></ul>
+    </div>
+    
+    <!-- Manual Update Section -->
+    <div class="form-section">
+      <h3>Add/Subtract Points</h3>
+      <input type="number" id="manualPoints" placeholder="Enter points (use - for subtract)" />
+      <br>
+      <input type="text" id="manualComment" placeholder="Enter comment" />
+      <br>
+      <button id="updatePoints" class="btn">Update Points</button>
+    </div>
+  </div>
+  
+  <!-- Items Table and Add Item Section -->
+  <div class="items-section">
+    <div class="form-section">
+      <h3>Redeem Items</h3>
+      <table id="itemsTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Cost</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be generated here -->
+        </tbody>
+      </table>
+      
+      <h4>Add New Item</h4>
+      <input type="text" id="newItemName" placeholder="Item Name" />
+      <br>
+      <input type="number" id="newItemCost" placeholder="Item Cost" />
+      <br>
+      <button id="addItem" class="btn">Add Item</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
